@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../pixelart"
+		},
+		{
+			"path": "../../reproducormusical-main"
+		},
+		{
+			"path": "../../../VISUAL STUDIO/reproductor de musica"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "reproducormusical-main"
+	}
+}
