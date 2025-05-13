@@ -1,0 +1,15 @@
+* {
+    color: #0d0d0d;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+
+    margin: unset;
+    padding: unset;
+
+
+    outline: unset;
+    border: unset;
+
+    box-sizing: border-box;
+}
