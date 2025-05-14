@@ -118,4 +118,18 @@ body > *{
     border-radius: 50%;
     align-items: center;
     font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.controles .control:hover {
+    transform: scale(1.1);
+}
+
+.controles .icono-control {
+    transform: scale(1.3);
+}
+
+.controles .icono-control:hover {
+     transform: scale(1.2);
 }
