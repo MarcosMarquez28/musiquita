@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+:root{
+    --blanco:(#f5f5f5bd);
+
+}
+
+
 * {
-    color: #0d0d0d;
+
+    
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
+
+    font-family: "Nunito", sans-serif;
 
     margin: unset;
     padding: unset;
@@ -12,4 +24,98 @@
     border: unset;
 
     box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    width: 100%;
+
+
+    background-image: url(/img/cyberpunk-6061251_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+
+body::before{
+    content: "";
+    position: absolute;
+    background-color: #0d0d0d80;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+body > *{
+    position: relative;
+    z-index: 2;
+}
+
+.reproductor-musica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ececec;
+    width: 380px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #f5f5f521;
+}
+
+.reproductor-musica h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.reproductor-musica p{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+#progreso {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    background-color: #8b8b8b7a;
+    border-radius: 4px;
+    margin: 32px 0 24px;
+    cursor: pointer;
+}
+
+#progreso::-webkit-slider-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #bbb4b4c5;
+    width: 16px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.controles button {
+    width: 50px;
+    aspect-ratio: 1/1;
+    margin: 20px;
+    background-color: #bbb4b477;
+    color: #ececec;
+    border-radius: 50%;
+    align-items: center;
+    font-size: 1.5rem;
 }
